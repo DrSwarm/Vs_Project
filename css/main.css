@@ -4,6 +4,17 @@ html {
     
 body {
   background-color: #66023c;
-  color: rgb(15, 83, 186);
+  color: rgba(15, 83, 186, 0.801);
 }
-  
+
+a{
+  color: rgba(255, 217, 0, 0.644);
+}
+
+a:visited {
+  color: rgba(255, 0, 0, 0.507);
+}
+
+a:hover, a:active {
+  color: rgba(245, 245, 245, 0.493);
+}darkviolet
