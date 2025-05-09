@@ -1,95 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content=" Joseph Juergens">
   <meta name="description" content="This page contains all the things I'm learing how to create as I learn HTML.">
   <title>My First Web Page</title>
-  <link rel="icon" href="html5.png">
+  <link rel="icon" href="img/vc_project_img05-icon.png">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <h1>My Goals for the Year</h1>
+  <header>
+    <h1>My Goals for the Year</h1>
 
+    <nav aria-label="primary-navigtion">
+      <ul>
+        <li>
+          <a href="#HTML">Learning HTML</a>
+        </li>
+        <li>
+          <a href="#Vacation">Planning Vacation</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <hr>
-  
-  <nav>
-    <ul>
-      <li>
-        <a href="#HTML">Learning HTML</a>
-      </li>
-      <li>
-        <a href="#Vacation">Planning Vacation</a>
-      </li>
-    </ul>
-  </nav>
+  <main>
+    <article id="HTML">
+      <h2>I'm ready to learn HTML.</h2>
+      <p>This is my first web page.</p>
+      <section>
+        <h3>Placeholders</h3>
+        <img src="https://placehold.co/300x200/EEE/31343C/png?font=playfair-display&text=Playfair%20Display"
+          alt="Placeholder Image" title="Temp Image" width="300" height="200">
+        <figure>
+          <figcaption>Placeholder Image</figcaption>
+          <p>
+            <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+          </p>
+        </figure>
 
-  <hr>
+        <img src="img/vc_project_img01.png" alt="Pretty Lady" title="Pretty Lady" width="509" height="337">
+      </section>
+      <section>
+        <h3>My daily schedule.</h3>
+        <p>Let me tell you how:</p>
 
-  <section id="HTML">
-  <h2>I'm ready to learn HTML.</h2>
-  <p>This is my first web page.</p> 
-  
-  <h3>My daily schedule.</h3>
-  <p>Let me tell you how:</p>
-  
-  <ol>
-    <li>...I learn more about web dev.</li> 
-    <li>...I plan out my schedule</li> 
-    <li>...I use resorcess from <abbr title="Mozilla Developer Network">
-      <a href="https://developer.mozilla.org/">MDN</a></abbr>.</li> 
-    
-  </ol>
-  </section>
-  
-  <hr>
-  
-  <section id="Vacation">
-  <h2>I'm Also Planning a Vacation.</h2>
-  
-  <ul>
-    
-    <li>
+        <ol>
+          <li>...I learn more about web dev.</li>
+          <li>...I plan out my schedule</li>
+          <li>...I use resorcess from <abbr title="Mozilla Developer Network">
+              <a href="https://developer.mozilla.org/">MDN</a></abbr>.</li>
+
+        </ol>
+        <aside>
+          <details>
+            <summary>Guess the <mark>number of hours</mark> I write code per day</summary>
+            <p>I start at <time datetime="08:00"> 8 am</time> and I write code for <time datetime="PT3H">3 hours</time>
+              every morning</p>
+          </details>
+        </aside>
+        <br>
+        <table>
+          <caption>My Daily Schedule</caption>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="col">Time</th>
+              <th scope="col">Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Morning</th>
+              <td>
+                <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+              </td>
+              <td>Write Code</td>
+            </tr>
+            <tr>
+              <th scope="row">Break</th>
+              <td>
+                <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+              </td>
+              <td>Lunch</td>
+            </tr>
+            <tr>
+              <th scope="row">Afternoon</th>
+              <td>
+                <time datetime="12:00">12pm</time>-<time datetime="17:00">5pm</time>
+              </td>
+              <td>Study for Course</td>
+            </tr>
+            <tr>
+              <th scope="row">Evening</th>
+              <td rowspan="2">All Other Times </td>
+              <td>Free Time</td>
+            </tr>
+            <tr>
+              <th scope="row">Night</th>
+              <td>Sleep</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">And thats what I do 24/7/365</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </article>
+    <hr>
+    <article id="Vacation">
+      <h2>I'm Also Planning a Vacation.</h2>
       <p>I've been working hard and <em>really need a getaway</em>.</p>
-    </li> 
-    
-    <li>
-      <p>I've head great things about the caribean. I'm not in <abbr title="California">CA</abbr> anymore, so no beach.</p>
-  
-      <p>I've heard great things about here.</p>
-      
-      <address>
-        <br>338 Broadway, Ste. 601 • Cape Girardeau, MO 
-      </address>
+      <p>I used to live in <abbr title="San Pedro">SP</abbr> so I'd like to visit the beach.</p>
+      <section>
+        <h3>Places I'd Like to Visit</h3>
+        <ul>
 
-    </li>
-  
-  </ul>
-  
-  <br>
-  
-  <!--TODO Add More Places-->
-  <h3>A Places I Want Avoid.</h3>
-  <dl>
-      <dt>North Pole</dt>
-      <dd>I hear this is <strong>Cold</strong></dd>
+          <li>
+            <p>I've head great things about the caribean. I'm not in <abbr title="California">CA</abbr> anymore, maybe
+              I'll
+              like to visit my <abbr title="Ex-Girlfriend">Ex</abbr></p>
+            <figure>
+              <img src="img/vc_project_img02.png" alt="Wonderful Woman" title="Wonderful Woman" width="365" height="546"
+                loading="lazy">
+              <figcaption>
+                Ex-Girlfriend
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <p>I've heard great things about here.</p>
 
-      <dt>South Pole</dt>
-      <dd>This is cold</dd>
-
-      <dt>Mountain Tops</dt>
-      <dd>These are cold</dd>
-  </dl>
-  </section>
-  
+            <address>
+              <br>338 Broadway, Ste. 601 • Cape Girardeau, MO
+            </address>
+            <figure>
+              <img src="img/vc_project_img03.png" alt="Future Wife" title="My Future" width="576" height="575"
+                loading="lazy">
+              <figcaption>
+                Baby Girl
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+        <br>
+      </section>
+      <!--TODO Add More Places-->
+      <section>
+        <h3>A Places I Want Avoid.</h3>
+        <dl>
+          <dt>North Pole</dt>
+          <dd>I hear this is <strong>Cold</strong></dd>
+          <dt>South Pole</dt>
+          <dd>This is cold <em>too</em></dd>
+          <dt>Mountain Tops</dt>
+          <dd>These are <strong><em>very cold</em></strong>
+          </dd>
+        </dl>
+      </section>
+    </article>
+  </main>
   <hr>
-  &lt;&lt;&lt; &copy; <a href="about.html">Yosef Yuergonsun</a>  &gt;&gt;&gt;
-
-  <p>
-    <a href="#">Back to Top</a>
-  </p>
-
+  <footer>
+    <p>
+      &lt;&lt;&lt; &copy; <a href="about.html">Yosef Yuergonsun</a> &gt;&gt;&gt;
+    </p>
+    <p>
+      <a href="#">Back to Top</a>
+    </p>
+  </footer>
 </body>
+
 </html>
